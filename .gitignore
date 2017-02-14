@@ -1,1 +1,6 @@
 software/**
+nucleo_hal/**
+*.zip
+*.obj
+*.bin
+*.o
