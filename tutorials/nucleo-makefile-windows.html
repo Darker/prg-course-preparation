@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Nucleo STM32 na Windows</title>
+  <link rel="stylesheet" type="text/css" href="cw.css"/>
+  </head>
+  <body>
+    <div class="dokuwiki">
+      <div class="page">
+        <h2 class="sectionedit1" id="INSTALACE_NUCLEO">Instalace vývojových nástrojů pro Nucleo na Windows</h2>
+        Postupujte podle následujících kroků:
+        <h3>Instalace mingw</h3>
+        Prvně, abyste na windows mohli spustit makefile - což se soubor instrukcí pro kompilaci, popř. instalaci - potřebujete MinGW. Přečtěte si pozorně instrukce 
+        v úvodu k práci s MinGW zde: http://www.mingw.org/wiki/Getting_Started Podle tohoto návodu MinGW nainstalujte.
+        
+        <h3>Instalace kompieru a debuggeru</h3>
+        <ol>
+          <li>Na následující stránce si stáhněte instalační program nástrojů pro vývoj: <a href="https://launchpad.net/gcc-arm-embedded/+download">https://launchpad.net/gcc-arm-embedded/+download</a>
+             Jedná se o kompiler, linker a debuger.
+          </li>
+          <li>Instalátor spusťte a nástroje nainstalujte.</li>
+          <li>
+            <b><font color="red">Poznámka: nezapomenout přesunout ukázkový projekt na CW</font></b>Nyní je čas na stažení ukázkového projektu. Následující krok se liší, pokud nemáte GIT.
+              <ol>
+                <li><b>Pokud máte GIT: </b> ve vhodné složce si stáhněte repozitář tímto přikazem: <tt>git clone git@github.com:Darker/PRG_nucleo_template.git</tt></li>
+                <li><b>Pokud nemáte GIT: </b> stáhněte si archiv s projektem jako ZIP: <a href="https://github.com/Darker/PRG_nucleo_template/archive/master.zip">https://github.com/Darker/PRG_nucleo_template/archive/master.zip</a></li>
+              </ol> 
+          </li>
+        </ol> 
+        <h3>Kompilace:</h3>
+        <ol>
+          <li>
+            Připojte Nucleo k počítači. Mělo by se zobrazit jako vyměnitelné médium pojmenované NODE_F446RE.
+          </li>
+          <li>
+            Ukázkový projekt nyní zkompilujte příkazem <tt>mingw32-make</tt>. Pozorně sledujte výstup. 
+          </li> 
+        </ol> 
+      </div>
+    </div>
+  </body>
+</html>
